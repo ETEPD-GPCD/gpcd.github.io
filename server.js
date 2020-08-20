@@ -45,7 +45,7 @@ nunjucks.configure('views', {
 
 app
 .get('/', (req, res) => {
-  res.render('index.html')
+  res.send('index.html')
 })
 .listen(port)
 
