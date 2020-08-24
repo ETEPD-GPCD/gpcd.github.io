@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* HEADER */
+
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  z-index: 100;
+
+  box-shadow: 0 0px 8px 2px rgba(0, 0, 0, 0.507);
+}
+nav {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgb(252, 252, 252);
+  font-family: 'Poppins', sans-serif;
+
+  z-index: 3;
+}
+
+.logo a{
+  color: rgb(43, 43, 43);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-size: 24px;
+
+  cursor: pointer;
+
+  transition: all .2s ease-in;
+}
+
+.logo a:hover {
+  color: rgb(40, 96, 218);
+}
+
+.nav-links {
+  display: flex;
+  /* background-color: red; */
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgb(43, 43, 43);
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 15px ;
+
+  transition: all .3s;
+}
+
+.nav-links a:hover {
+  color: rgb(40, 96, 218);
+}
+
+.burger {
+  display: none ;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: rgb(43, 43, 43);
+  margin: 5px;
+
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1280px) {
+  .nav-links {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: rgb(252, 252, 252);
+    width: 55%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(102%);
+    transition: transform 0.3s ease-in;
+
+  }
+
+  .nav-links li {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+   
+  }
+}
+
+.nav-active {
+  transform: translateX(2%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+    
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* BODY */
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+
+.banner .content {
+  position: relative;
+  max-width: 750px;
+  text-align: center;
+}
+
+.banner .content h2 {
+  color: #ffffff;
+  font-size: 60px ;
+}
+
+.about {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.about .contentBx {
+  background: #162c3b;
+  padding: 100px;
+  width: 50%;
+}
+
+.heading {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.text {
+  color: #fff;
+  font-weight: 300;
+  font-size: 16px ;
+  letter-spacing: 1px;
+}
+
+.about .imageBx {
+  background: url('/images/ilha_pd.jpg');
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.services {
+  background: #12222d;
+  padding: 100px;
+  text-align: center;
+}
+
+.services .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.services .container .serviceBx {
+  position: relative;
+  background: #fff;
+  width: 350px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services .container .serviceBx img {
+  max-width: 100px;
+}
+
+.services .container .serviceBx h2 {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.technology {
+  background: #3f8ffc;
+  width: 100%;
+  padding: 100px;
+
+  padding-top: 300px;
+  margin-top: -300px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.technology .contentBx {
+  max-width: 800px;
+}
+
+.technology .imageBx {
+  max-width: 350px;
+}
+
+.technology .imageBx img {
+  max-width: 100%;
+}
+
+/* .client {
+  background: #162c3b;
+  padding: 100px;
+  text-align: center; 
+}
+
+.client .bioBx {
+  max-width: 800px;
+  margin: 50px auto;
+}
+
+.client .bioBx .bio {
+  color: #fff;
+}
+
+.client .bioBx .person {
+  color: #fff;
+} */
+
+.Testimonials {
+  position: relative;
+  padding: 100px;
+  background: #12222d;
+  text-align: center;
+}
+
+.Testimonials .container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 40px;
+   flex-wrap: wrap;
+
+   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Testimonials .container .bioBx {
+  background: #fff;
+  padding: 60px 50px;
+  width: 700px;
+
+  text-align: center;
+  flex-direction: column;
+}
+
+.Testimonials .container .bioBx .bio {
+  font-style: italic;
+}
+
+.Testimonials .container .bioBx h3{
+  width: 100%;
+  text-align: end;
+  font-weight: 600;
+  color: #3f8ffc;
+}
+
+.footer {
+  background: #162c3b;
+  padding: 20px 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer span {
+  color: #fff;
+  margin-right: 10px;
+
+}
+
+.footer p {
+  text-align:center;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.footer ul li a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 15px;
+
+}
+
+.footer ul li a i {
+  color: white;
+}
+
+
+@media (max-width: 1312px) {
+  .banner .content h2 {
+    font-size: 36px ;
+  }
+  .banner .content p {
+    font-size: 16px;
+  }
+  .banner {
+    padding: 40px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about .contentBx,
+  .about .imageBx {
+    width: 100%;
+    padding: 50px;
+    min-height: 400px;
+    text-align: center;
+  }
+  .services {
+    padding: 50px;
+  }
+  .services .container {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .services .container .serviceBx {
+    margin: 20px;
+    width: 300px;
+    height: 350px;
+  }
+  .technology {
+    padding: 50px;
+    padding-top: 300px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .technology .imageBx {
+    margin-top: 40px;
+    max-width: 350px;
+  }
+
+  .Testimonials {
+    padding: 50px ;
+  }
+
+  .Testimonials .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Testimonials .contentBx {
+    padding: 60px 40px  ;
+    max-width: 550px;
+
+    margin-top: 20px;
+  }
+
+  .Testimonials .contentBx:last-child {
+    margin-bottom: 0;
+  }
+
+
+}
+
