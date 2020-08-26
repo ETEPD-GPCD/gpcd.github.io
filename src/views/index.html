@@ -9,8 +9,14 @@
     <script src="https://kit.fontawesome.com/1cbd342892.js" crossorigin="anonymous"></script>
     <!-- scripts -->
     <script src="/src/scripts/header.js" defer></script>
+    <script src="/src/scripts/animations.js" defer></script>
+    <script src="/src/scripts/smoothscroll.js" defer></script>
     <!-- CSS Here -->     
     <link rel="stylesheet" href="/src/styles/style.css">
+    <link rel="stylesheet" href="/src/styles/header.css">
+    <link rel="stylesheet" href="/src/styles/footer.css">
+    <link rel="stylesheet" href="/src/styles/tecs.css">
+    <link rel="stylesheet" href="/src/styles/activities.css">
     <!-- font-family: 'Poppins', sans-serif; -->
 </head>
 
@@ -18,16 +24,16 @@
     <div class="banner">
         <!-- Header -->
         <header class="header">
-            <nav>
+            <nav class="menu">
                 <div class="logo">
-                    <h3><a href="#">gp | cd</a></h3>
+                    <h3><a href="index.html">gp | cd</a></h3>
                 </div>
                 <ul class="nav-links">
-                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="index.html">Home</a> </li>
                     
-                    <li> <a href="#">Conheça</a> </li>
+                    <li> <a id="scroll"href="#Conheça">Conheça</a> </li>
                     
-                    <li> <a href="#">Sobre Nós</a> </li>
+                    <li> <a href="about.html">Sobre Nós</a> </li>
                 </ul>
             
                 <div class="burger">
@@ -37,39 +43,53 @@
                 </div>
             </nav>
         </header>
+        <div class="overlay"></div>
         <!-- Content -->
-        <img src="/images/pythoncode.jpg" alt="Code">
-        <div class="content">
+        <img src="/images/pythoncode.jpg" alt="Code" id="home">
+        <div class="content" >
             <h2>Seja Bem-Vindo(a)!</h2>
-            <p class="text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, corporis sequi minus perspiciatis, vitae minima molestiae deleniti ad adipisci consequatur voluptatum, neque rerum. Possimus recusandae necessitatibus laboriosam commodi porro vero.</p>
+            <p class="text"> Seja bem-vindo ao site do Grupo de Ciências de Dados da ETE Porto Digital, onde nós aprendemos a programar e a desenvolver, aqui você poderá nos conhecer, conhecer nosso integrantes e descobrir o que fazemos.</p>
         </div>
     </div>
+
     <!-- About -->
-    <section class="about">
-        <div class="contentBx">
-            <h2 class="heading">Conheça</h2>
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, quaerat fugiat. Excepturi, explicabo. Totam praesentium, dolor quidem corporis aspernatur a animi illum eius quo, necessitatibus explicabo libero fugiat. Ullam, dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptate eos consequuntur velit culpa magni soluta, necessitatibus animi libero, nesciunt minima, ducimus est repudiandae aliquid consectetur consequatur sed earum. Omnis? <br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis provident consequatur praesentium veniam. Quidem assumenda corrupti reprehenderit laborum neque velit, ut perspiciatis, maiores illum repellendus commodi sit enim quibusdam quis!</p>
+    <section class="about" id="Conheça">
+        <div class="contentBx" >
+            <h2 class="heading">Como Surgimos ? </h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, quaerat fugiat. Excepturi, explicabo. Totam praesentium, dolor quidem corporis aspernatur a animi illum e   ius quo, necessitatibus explicabo libero fugiat. Ullam, dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptate eos consequuntur velit culpa magni soluta, necessitatibus animi libero, nesciunt minima, ducimus est repudiandae aliquid consectetur consequatur sed earum. Omnis? <br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis provident consequatur praesentium veniam. Quidem assumenda corrupti reprehenderit laborum neque velit, ut perspiciatis, maiores illum repellendus commodi sit enim quibusdam quis!</p>  
         </div>
         <div class="imageBx"> </div>
     </section>
 
-    <section class="services">
-        <h2 class="heading">Nossas </h2>
-        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iste placeat distinctio, aspernatur vel numquam dolorem voluptatem amet commodi eligendi doloremque sed rerum consectetur eum voluptatibus saepe dolores aperiam. Modi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima praesentium velit nihil tenetur, facere laborum ea molestiae obcaecati tempora sint quam et unde tempore, dolores nesciunt! Voluptas, in. Minima, illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptatem animi beatae optio voluptas hic odit excepturi minus. Incidunt, rem! Dolores dolor odio molestiae repellat voluptates assumenda deleniti aliquam vero?</p>
-        <div class="container">
-            <div class="serviceBx">
+    <section class="info">  
+        <div class="contentBx" data-anime="left">
+            <h2 class="heading">Info</h2>
+            <p class="text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, magnam! Quae odio voluptatum aperiam sapiente, quasi deleniti repellat voluptatem et est illo autem quos eligendi fugit iure? Repellendus, molestias fuga. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem libero iure non vitae corrupti exercitationem cupiditate architecto quas officia, eos incidunt accusantium ut porro repudiandae ratione cumque saepe. Non, quo. <br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. A doloremque adipisci dolorum quidem maiores recusandae suscipit ab odit quos! Optio qui similique ex in aliquam error repudiandae dolore? Aliquam, hic. Lorem ipsum dolor sit amet consectetur, adipisicing elit.  
+            </p>
+        </div>
+        <div class="imageBx"> <img src="/images/prof.jpg" alt="Professor Cloves"></div>
+    </section>
+
+    <section class="services" id="About">
+        <div class="title" data-anime="top">
+            <h2 class="heading">O que Fazemos ?</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iste placeat distinctio, aspernatur vel numquam dolorem voluptatem amet commodi eligendi doloremque sed rerum consectetur eum voluptatibus saepe dolores aperiam. Modi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima praesentium velit nihil tenetur, facere laborum ea molestiae obcaecati tempora sint quam et unde tempore, dolores nesciunt! Voluptas, in. Minima, illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptatem animi beatae optio voluptas hic odit excepturi minus. Incidunt, rem! Dolores dolor odio molestiae repellat voluptates assumenda deleniti aliquam vero?</p>
+        </div>
+            <div class="container">
+                <div class="serviceBx" data-anime="left">
                 <div>
                     <img src="/images/icons/icon1.png" alt="Design">
                     <h2>Design</h2>
                 </div>
             </div>
-            <div class="serviceBx">
+            <div class="serviceBx" data-anime="top">
                 <div>
                     <img src="/images/icons/icon2.png" alt="Desenvolvimento">
                     <h2>Desenvolvimento</h2>
                 </div>
             </div>
-            <div class="serviceBx">
+            <div class="serviceBx" data-anime="right">
                 <div>
                     <img src="/images/icons/icon3.png" alt="Branding">
                     <h2>Crescimento</h2>
@@ -78,102 +98,51 @@
         </div>
     </section>
 
-    <section class="technology">
-        <div class="contentBx">
+    <section class="technology" >
+        <div class="contentBx" data-anime="left" >
             <h2 class="heading">Tecnologias que Utilizamos</h2>
             <p class="text">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellendus eaque architecto, corporis saepe soluta dolorum omnis fuga odio repudiandae sequi consequuntur earum illo obcaecati delectus fugit reprehenderit doloremque debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non repellat, in similique debitis modi consectetur veniam rem, vero soluta delectus ad corporis minima cum eius. Debitis et laudantium cupiditate maxime?Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fugiat harum voluptas. In maiores excepturi tempora explicabo dolore eaque dignissimos distinctio! A ipsa accusamus reiciendis iure dolorem sequi qui suscipit?
             </p>
         </div>
-        <div class="imageBx">
+        <div class="imageBx" data-anime="right">
             <img src="/images/tech.png" alt="Tecnologias">
         </div>
     </section>
 
-    <!-- <section class="client">
-        <h2 class="heading">
-            Lorem Ipsum
-        </h2>
-        <p class="text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo aliquam, soluta architecto odio rerum pariatur cum eveniet quidem recusandae in laboriosam voluptate doloribus numquam ex voluptates nesciunt nostrum quisquam! Obcaecati. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga a explicabo vero dolores omnis porro tenetur impedit, distinctio nobis, provident veniam illo at consequuntur et veritatis ullam eaque perferendis laborum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo error veniam, ducimus sequi dolore nostrum nisi minima culpa nemo eos consectetur cum illum reiciendis pariatur aut. Quia animi asperiores voluptate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio officia, sit accusantium consequatur qui libero saepe doloribus, voluptatibus quo excepturi ipsum, dolore repudiandae quam fuga. Vel expedita veritatis recusandae quae?
-        </p>
-        <div class="bioBx">
-            <p class="bio">   
-                <em>Meu contato com programação começa antes de eu sequer saber da existência da ETE Porto Digital, eu sempre fui bastante interessada por jogos, ao ponto de querer saber mais como ele eram feitos, o que me fez pesquisar sobre vários tipos de programações, através de um professor da minha antiga escola eu consegui me inscrever e entrar na ETE Porto Digital, para tentar aprender bastante sobre programação e design, durante os estudos o professor Cloves criou um grupo de ciência de dados, fiquei em dúvida sobre entrar, pois estava mais para o lado de design e não sabia muito sobre programação, mas vi como uma ótima oportunidade para aprender mais sobre programação e aplicar os conceitos que estou aprendendo durante as aulas de design, pretendo aprender bastante sobre programação estando no grupo e tentar deixar nossos projetos o mais visualmente bonitos e obter experiência para me tornar uma ótima profissional.</em> <br><br>
-            </p>
-            <span class="person"><em>Sabrina, 15 anos, 1ºC</em></span>
+    <section class="activities">
+        <div class="titlex">
+            <h2 class="heading">Lorem Ipsum</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, molestiae. Eum placeat consequuntur modi dolorem, molestiae, est nemo doloribus voluptates assumenda voluptatum quidem cupiditate vero illum. Magni ullam voluptatibus molestiae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quia numquam ut voluptate expedita, ab  rerum exercitationem sapiente autem adipisci quod aspernatur quam voluptas. Iure pariatur corrupti ex. Incidunt, officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloremque, veritatis cum quasi dolore sit. Doloribus eaque ex fugiat, nam sapiente iusto! Rem atque exercitationem impedit iste totam necessitatibus recusandae! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, consequatur. Soluta, a! Laboriosam, minus sunt? Corrupti aperiam distinctio iusto repellendus, inventore maiores adipisci ad placeat possimus vero porro dolorum obcaecati. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus in omnis saepe non, expedita id doloremque vitae dolore, reprehenderit, laborum enim ducimus a. A suscipit maiores magnam voluptatibus sint et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velit enim cupiditate aliquam ipsum accusantium, reiciendis earum rerum perspiciatis sint vel doloremque esse facere hic nostrum ipsa excepturi doloribus natus.</p>
         </div>
-
-        <div class="bioBx">
-            <p class="bio">   
-                <em>Tudo começou em 2018 quando o Porto Digital virou uma ETE, apesar que eu não tinha nenhum conhecimento do Porto Digital a minha irmã viu o grande potencial da escola e meu irmão tinha alguns conhecimentos de software, mas eu nunca tinha pensado em fazer algo na área de sistemas. Enfim, chegou 2019, época de fazer a inscrição para a prova, escolhi o Porto Digital mesmo não tendo conhecimento sobre sistemas e seria até bom aprender sobre. Passei na prova, fiz a matrícula e tudo que era necessário. Um tempo depois o professor de programação falou sobre a criação de um grupo de dados, de primeira não entrei já que meu conhecimento era bem básico, mas depois mudei de ideia já que o grupo de dados seria para aprofundar o conhecimento. Com o grupo de dados espero conseguir aumentar meu conhecimento sobre o mundo de desenvolvimento de sistemas e usar esse conhecimento na minha vida profissional.</em> <br><br>
-            </p>
-            <span class="person"><em>Elisa, 15 anos, 1ºB</em></span>
-        </div>
-
-        <div class="bioBx">
-            <p class="bio">   
-                <em>Bom, em 2009, quando eu tinha uns três anos de idade, meu pai comprou um computador, mais pra usar pra trabalho e tal. Quando vi, fiquei fascinado por aquilo e como tudo funcionava, e eu com minha curiosidade de criança, pedi para meu pai me ensinar a mexer naquela máquina. Meu pai me ensinou a entrar no Google e jogar no Click Jogos, o resto eu descobri sozinho. E em meados de 2017/2018, terminei, sem querer, descobrindo a programação enquanto pesquisava sobre profissões que lidava com tecnologia. Estudei um pouco de lógica, mas terminei parando no meio, até que chegou o período de inscrições do ETE e IFPE. Não me encaixava em nenhum curso, até ver o Técnico, Desenvolvimento de Sistemas no ETEPD, e foi paixão logo de cara. Passei na prova, e dentro do PD abriu-se a oportunidade de entrar no Grupo de Pesquisa em Ciência de Dados, ao qual entrei para aprimorar minhas habilidades com a programação e me ajudar na carreira da tecnologia, que é uma área que eu realmente amo demais.</em> <br><br>
-            </p>
-            <span class="person"><em>Flávio, 14 anos, 1ºC</em></span>
-        </div>
-
-        <div class="bioBx">
-            <p class="bio">   
-                <em>
-                    A história começa antes da criação do grupo, quando eu tinha apenas 11 anos, quando comecei a me interessar por programação, de como as tecnologias eram feitas, pois eu gostava muito de jogar jogos eletrônicos, ficar no computador e de tecnologia, mas nunca me aprofundei. Anos se passaram, e entrei no ETE PORTO DIGITAL, procurando desenvolver mais meu conhecimento sobre informática e sistemas. Enquanto estudava, Cloves, o professor de linguagem de programação dos alunos do 1° ano, cogitou por criar um grupo de ciência de dados, fiquei receoso de entrar, pois meu entendimento era muito raso, todavia fui aceito e estou me aperfeiçoando cada vez mais. Eu estando no grupo pretendo conhecer mais a programação, programar, ter experiência e poder levar para minha vida profissional.
-                    </em> <br><br>
-            </p>
-            <span class="person"><em>Gustavo, 15 anos, 1ºA</em></span>
-        </div>
-
-    </section> -->
-
-    <section class="Testimonials">
-        <h2 class="heading">Lorem Ipsum</h2>
-        <div class="container">      
-            <div class="bioBx">
-                <p class="bio">   
-                    Meu contato com programação começa antes de eu sequer saber da existência da ETE Porto Digital, eu sempre fui bastante interessada por jogos, ao ponto de querer saber mais como ele eram feitos, o que me fez pesquisar sobre vários tipos de programações, através de um professor da minha antiga escola eu consegui me inscrever e entrar na ETE Porto Digital, para tentar aprender bastante sobre programação e design, durante os estudos o professor Cloves criou um grupo de ciência de dados, fiquei em dúvida sobre entrar, pois estava mais para o lado de design e não sabia muito sobre programação, mas vi como uma ótima oportunidade para aprender mais sobre programação e aplicar os conceitos que estou aprendendo durante as aulas de design, pretendo aprender bastante sobre programação estando no grupo e tentar deixar nossos projetos o mais visualmente bonitos e obter experiência para me tornar uma ótima profissional.<br><br>
-                </p>
-                <h3><em>Sabrina, 15 anos, 1ºC</em></h3>
+        <div class="images-container">
+            <div class="first-container auto">
+                <div class="first"><img src="/images/transistor1.png" alt="transistor"></div>
+                <span class="txt">
+                    Lorem ipsum dolor  adipisicing elit.</span>
+            </div>   
+            <div class="second-container auto">
+                <div class="second"><img src="/images/brain.png" alt="transistor"></div>
+                <span class="txt">
+                    Lorem ipsum dolor adipisicing elit.
+                </span>
             </div>
-            
-            <div class="bioBx">
-                <p class="bio">   
-                    Tudo começou em 2018 quando o Porto Digital virou uma ETE, apesar que eu não tinha nenhum conhecimento do Porto Digital a minha irmã viu o grande potencial da escola e meu irmão tinha alguns conhecimentos de software, mas eu nunca tinha pensado em fazer algo na área de sistemas. Enfim, chegou 2019, época de fazer a inscrição para a prova, escolhi o Porto Digital mesmo não tendo conhecimento sobre sistemas e seria até bom aprender sobre. Passei na prova, fiz a matrícula e tudo que era necessário. Um tempo depois o professor de programação falou sobre a criação de um grupo de dados, de primeira não entrei já que meu conhecimento era bem básico, mas depois mudei de ideia já que o grupo de dados seria para aprofundar o conhecimento. Com o grupo de dados espero conseguir aumentar meu conhecimento sobre o mundo de desenvolvimento de sistemas e usar esse conhecimento na minha vida profissional. <br><br>
-                </p>
-                <h3><em>Elisa, 15 anos, 1ºB</em></span></h3>
+            <div class="third-container auto">
+                <div class="third"><img src="/images/transistor3.png" alt="transistor"></div>   
+                <span class="txt">
+                    Lorem ipsum dolor  adipisicing elit.
+                </span>      
             </div>
-            
-            <div class="bioBx">
-                <p class="bio">   
-                    Bom, em 2009, quando eu tinha uns três anos de idade, meu pai comprou um computador, mais pra usar pra trabalho e tal. Quando vi, fiquei fascinado por aquilo e como tudo funcionava, e eu com minha curiosidade de criança, pedi para meu pai me ensinar a mexer naquela máquina. Meu pai me ensinou a entrar no Google e jogar no Click Jogos, o resto eu descobri sozinho. E em meados de 2017/2018, terminei, sem querer, descobrindo a programação enquanto pesquisava sobre profissões que lidava com tecnologia. Estudei um pouco de lógica, mas terminei parando no meio, até que chegou o período de inscrições do ETE e IFPE. Não me encaixava em nenhum curso, até ver o Técnico, Desenvolvimento de Sistemas no ETEPD, e foi paixão logo de cara. Passei na prova, e dentro do PD abriu-se a oportunidade de entrar no Grupo de Pesquisa em Ciência de Dados, ao qual entrei para aprimorar minhas habilidades com a programação e me ajudar na carreira da tecnologia, que é uma área que eu realmente amo demais.<br><br>
-                </p>
-                <h3><em>Flávio, 14 anos, 1ºC</em></h3>
-            </div>
-            
-            <div class="bioBx">
-                <p class="bio">   
-                    
-                        A história começa antes da criação do grupo, quando eu tinha apenas 11 anos, quando comecei a me interessar por programação, de como as tecnologias eram feitas, pois eu gostava muito de jogar jogos eletrônicos, ficar no computador e de tecnologia, mas nunca me aprofundei. Anos se passaram, e entrei no ETE PORTO DIGITAL, procurando desenvolver mais meu conhecimento sobre informática e sistemas. Enquanto estudava, Cloves, o professor de linguagem de programação dos alunos do 1° ano, cogitou por criar um grupo de ciência de dados, fiquei receoso de entrar, pois meu entendimento era muito raso, todavia fui aceito e estou me aperfeiçoando cada vez mais. Eu estando no grupo pretendo conhecer mais a programação, programar, ter experiência e poder levar para minha vida profissional.
-                         <br><br>
-                </p>
-                <h3><em>Gustavo, 15 anos, 1ºA</em></span></h3>
-            </div>
-
-        </div>
-
-
+        </div> 
     </section>
+        
     
     <section class="footer">  
         <ul>
             <span>Nos Acompanhe :</span>
-            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-            <li><a href="#"><i class="fab fa-github"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.instagram.com/gpcd.etepd/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCgRxpKnV-62BG7IbLCyHYXA" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://github.com/ETEPD-GPCD" target="_blank"><i class="fab fa-github"></i></a></li>
         </ul>
         <p class="text">GP | CD - Grupo de Pesquisa em Ciências de Dados</p>
     </section>
