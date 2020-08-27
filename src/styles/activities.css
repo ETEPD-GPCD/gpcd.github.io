@@ -64,6 +64,7 @@
 .auto span {
   text-align: center;
   margin-right: 3px;
+  font-size: 14px;
   
 }
 
@@ -72,6 +73,10 @@
 @media (max-width: 768px) {
   .activities {
     padding: 60px 30px;
+  }
+
+  .activities .titlex .heading {
+    font-size: 27px;
   }
   .images-container {
     flex-direction: column;
