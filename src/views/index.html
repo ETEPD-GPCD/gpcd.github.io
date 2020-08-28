@@ -20,7 +20,7 @@
     <!-- font-family: 'Poppins', sans-serif; -->
 </head>
 
-<body>
+<body class="preload">
     <div class="banner">
         <!-- Header -->
         <header class="header">
@@ -44,7 +44,7 @@
                 </div>
             </nav>
         </header>
-        <div class="overlay"></div>
+        <div class="nav__overlay"></div>
         <!-- Content -->
         <img class="background"src="/images/pythocode.png" alt="Code" id="home">
         <div class="content" >
@@ -55,9 +55,9 @@
 
     <!-- About -->
     <section class="about" id="Conheça">
-        <div class="contentBx" >
+        <div class="contentBx" data-anime="left">
             <h2 class="heading">Como Surgimos ? </h2>
-            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo, quaerat fugiat. Excepturi, explicabo. Totam praesentium, dolor quidem corporis aspernatur a animi illum e   ius quo, necessitatibus explicabo libero fugiat. Ullam, dolores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptate eos consequuntur velit culpa magni soluta, necessitatibus animi libero, nesciunt minima, ducimus est repudiandae aliquid consectetur consequatur sed earum. Omnis? <br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis provident consequatur praesentium veniam. Quidem assumenda corrupti reprehenderit laborum neque velit, ut perspiciatis, maiores illum repellendus commodi sit enim quibusdam quis!</p>  
+            <p class="text">A convite do professor Clóves Rocha, nós, alunos do 1° ano da ETE Porto Digital, fomos chamados para ingressar em um projeto focado em aprimorar pesquisas na área de Ciência de Dados. O projeto é  liderado pelo aluno Miguel e foi denominado posteriormente de "Grupo de Ciências de Dados" pelos integrantes. 
         </div>
         <div class="imageBx"> </div>
     </section>
@@ -66,7 +66,7 @@
         <div class="contentBx" data-anime="left">
             <h2 class="heading">Info</h2>
             <p class="text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, magnam! Quae odio voluptatum aperiam sapiente, quasi deleniti repellat voluptatem et est illo autem quos eligendi fugit iure? Repellendus, molestias fuga. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem libero iure non vitae corrupti exercitationem cupiditate architecto quas officia, eos incidunt accusantium ut porro repudiandae ratione cumque saepe. Non, quo. <br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. A doloremque adipisci dolorum quidem maiores recusandae suscipit ab odit quos! Optio qui similique ex in aliquam error repudiandae dolore? Aliquam, hic. Lorem ipsum dolor sit amet consectetur, adipisicing elit.  
+                O projeto teve ascensão por intermédio do professor Clóves Rocha, graduado em Gestão da Tecnologia da Informação, mestre em Ciência da Computação pelo Centro de Informática da UFPE, professor da ETE Porto Digital, professor universitário na UniFG, conselheiro dos cursos superiores de tecnologia no Centro Universitário Guararapes (UniFG), Orientador do grupo de pesquisa em Data Science, na REDE LAUREATE INTERNATIONAL UNIVERSITIES e atual orientador do grupo.
             </p>
         </div>
         <div class="imageBx"> <img src="/images/prof.jpg" alt="Professor Cloves"></div>
@@ -75,7 +75,7 @@
     <section class="services" id="About">
         <div class="title" data-anime="top">
             <h2 class="heading">O que Fazemos ?</h2>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, iste placeat distinctio, aspernatur vel numquam dolorem voluptatem amet commodi eligendi doloremque sed rerum consectetur eum voluptatibus saepe dolores aperiam. Modi! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima praesentium velit nihil tenetur, facere laborum ea molestiae obcaecati tempora sint quam et unde tempore, dolores nesciunt! Voluptas, in. Minima, illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, voluptatem animi beatae optio voluptas hic odit excepturi minus. Incidunt, rem! Dolores dolor odio molestiae repellat voluptates assumenda deleniti aliquam vero?</p>
+            <p class="text">Utilizamos da tecnologia das linguagens de programação, aplicando-a em pesquisas focadas em ciência de dados, possibilitando assim o encurtamento da noção de criação de um site, pois temos iniciação recente na área da tecnologia e, por meio de estudos e aperfeiçoamento de técnicas interligados ao trabalho em equipe, desenvolvemos um site de maneira mais precoce em questão de nível acadêmico. Temos uma variedade enorme de personalidades e objetivos, por isso dentro do nosso grupo temos dois times, Design e Desenvolvimento, trabalhando em conjunto para crescermos e alcançarmos o próximo nível. <p>
         </div>
             <div class="container">
                 <div class="serviceBx" data-anime="left">
@@ -103,7 +103,15 @@
         <div class="contentBx" data-anime="left" >
             <h2 class="heading">Tecnologias que Utilizamos</h2>
             <p class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellendus eaque architecto, corporis saepe soluta dolorum omnis fuga odio repudiandae sequi consequuntur earum illo obcaecati delectus fugit reprehenderit doloremque debitis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non repellat, in similique debitis modi consectetur veniam rem, vero soluta delectus ad corporis minima cum eius. Debitis et laudantium cupiditate maxime?Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fugiat harum voluptas. In maiores excepturi tempora explicabo dolore eaque dignissimos distinctio! A ipsa accusamus reiciendis iure dolorem sequi qui suscipit?
+                Para a realização do projeto, utilizamos 4 linguagens, sendo elas:<br>
+                HTML<br>
+                É uma linguagem de marcação utilizada na construção de páginas na Web.<br>
+                Cascading Style Sheets (CSS)<br>
+                É um mecanismo para adicionar estilo a um documento web.<br>
+                JavaScript <br>
+                É uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma. <br>
+                Python <br>
+                É uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.
             </p>
         </div>
         <div class="imageBx" data-anime="right">
@@ -114,27 +122,27 @@
     <section class="activities">
         <div class="titlex">
             <h2 class="heading">Mas, O que é "Ciência de Dados" ?</h2>
-            <p class="text">Com a chegada da <strong>Era da Informação</strong> a quantidade de Informações, de <strong>Dados</strong>, se tornaram imensas e impossíveis de se administrar no papel, para coletar e organizar todos esses dados só com o auxílio da tecnologia. A Ciência de Dados ou <strong>Data Science</strong> é o uso de diversas tecnologias, para coletar, armazenar e processar informações, ela se mostrou fundamental para qualquer empresa, para, por exemplo, traçar o perfil de possíveis clientes com base em dados coletados, e a partir daí, criar possíveis estratégias de negócio, de marketing, etc. A Ciência de Dados une alguns ramos, como por exemplo, <strong>Ciência da Computação</strong>, <strong>Inteligência Artifical</strong>, para lidar com esses Dados e organizá-los devidamente, é necessário um bom conhecimento em <strong>Matemática e Estatística.</strong> </p>
+            <p class="text">Com a chegada da <strong>Era da Informação</strong> a quantidade de Informações, de <strong>Dados</strong>, se tornaram imensas e impossíveis de se administrar no papel, para coletar e organizar todos esses dados só com o auxílio da tecnologia. A Ciência de Dados ou <strong>Data Science</strong> é o uso de diversas tecnologias, para coletar, armazenar e processar informações, ela se mostrou fundamental para qualquer empresa, para, por exemplo, traçar o perfil de possíveis clientes com base em dados coletados, e a partir daí, criar possíveis estratégias de negócio, de marketing, etc. A Ciência de Dados une alguns ramos, como por exemplo: </p>
         </div>
         <div class="images-container">
             <div class="first-container auto">
                 <div class="first"><img src="/images/transistor1.png" alt="transistor"></div>
-                <span class="txt">
-                    Ciência da computação</span>
+                <span class="txt">Ciência da computação</span>
             </div>   
             <div class="second-container auto">
                 <div class="second"><img src="/images/brain.png" alt="transistor"></div>
-                <span class="txt">
-                    Inteligência Artificial Aprendizado de Máquina
-                </span>
+                <span class="txt">Inteligência Artificial Aprendizado de Máquina</span>
             </div>
             <div class="third-container auto">
-                <div class="third"><img src="/images/transistor3.png" alt="transistor"></div>   
-                <span class="txt">
-                    Matemática e Estatística
-                </span>      
+                <div class="third"><img src="/images/calculator.png" alt="calculadora"></div>   
+                <span class="txt">Matemática e Estatística</span>      
             </div>
         </div> 
+        <div class="titlex last">
+            <p class="text">
+                A União desses três ramos torna a Ciência de Dados algo muito poderoso, essencial pra qualquer empresa de qualquer porte, facilitando e aprimorando a relização das tarefas dentro da empresa, Ela abrange muitos cargos e funções, como <strong>Analista de Dados</strong> , <strong>Cientista de Dados</strong>, e cargos relacionados a inteligência artificial. 
+            </p>
+        </div>
     </section>
         
     

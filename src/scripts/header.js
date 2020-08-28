@@ -8,6 +8,7 @@ const navSlide = () => {
     // Create Overlay
     // Toggle Nav
     nav.classList.toggle('nav-active')
+
   // Nav Links 
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
@@ -21,5 +22,7 @@ const navSlide = () => {
   burger.classList.toggle('toggle')
   })
 }
+
+
 
 navSlide();

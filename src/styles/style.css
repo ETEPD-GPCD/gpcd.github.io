@@ -55,6 +55,10 @@ section {
   width: 50%;
 }
 
+.about .contentBx .text {
+  margin-top: 15px;
+}
+
 .heading {
   color: #fff;
   font-size: 30px;
@@ -87,6 +91,10 @@ section {
   background-image: linear-gradient(#0d3047 60%, #12222d);
   padding: 100px;
   width: 70%;
+}
+
+.info .contentBx .text {
+  margin-top: 20px;
 }
 
 .info .imageBx {
